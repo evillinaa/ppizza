@@ -10,9 +10,9 @@ int main()
 	float choice, sum = 0, pizzas = 0, freepizzas = 0, drinks = 0, drink1 = 0, drink1sum = 0, drink2 = 0, drink2sum = 0, drink3 = 0, drink3sum = 0, pizza1 = 0, pizza1sum = 0, pizza2 = 0, pizza2sum = 0, pizza3 = 0, pizza3sum = 0, pizza4 = 0, pizza4sum = 0;
 
 	std::cout << "\t      Меню\n\n\t      Пицца\n\nНазвание\t\tЦена\t\tкод блюда\n\n";
-	std::cout << "Пепперони\t\t10$\t\t    11\nМаргаритта\t\t9$\t\t    12\nС ананасами\t\t13$\t\t    13\nСырная\t\t\t8$\t\t    14\n\n";
+	std::cout << "Пепперони\t\t10$\t\t    11\nМаргаритта\t\t9$\t\t    12\nГавайская\t\t13$\t\t    13\nСырная\t\t\t8$\t\t    14\n\n";
 	std::cout << "\t      Напитки\n\nНазвание\t\tЦена\t\tкод напитка\n\n";
-	std::cout << "Милкшейк\t\t3$\t\t    21\nЗлойКола\t\t2$\t\t    22\nВода\t\t\t1$\t\t    23\n\n";
+	std::cout << "Милкшейк\t\t3$\t\t    21\nФанта\t\t2$\t\t    22\nВода\t\t\t1$\t\t    23\n\n";
 
 	while (true)
 	{
@@ -145,7 +145,7 @@ int main()
 	}
 	if (pizza3 > 0)
 	{
-		std::cout << "С ананасами\t\t" << pizza3 << "шт\t\t" << pizza3sum << "$\n";
+		std::cout << "Гавайская\t\t" << pizza3 << "шт\t\t" << pizza3sum << "$\n";
 	}
 	if (pizza4 > 0)
 	{
@@ -157,14 +157,14 @@ int main()
 	}
 	if (drink2 > 0)
 	{
-		std::cout << "ЗлойКола\t\t" << drink2 << "шт\t\t" << drink2sum << "$\n";
+		std::cout << "Фанта\t\t" << drink2 << "шт\t\t" << drink2sum << "$\n";
 	}
 	if (drink3 > 0)
 	{
 		std::cout << "Вода\t\t\t" << drink3 << "шт\t\t" << drink3sum << "$\n";
 	}
 	std::cout << "\nКоличество бесплатных пицц: " << freepizzas;
-	std::cout << "\n\nИтого (с учётом скидок): " << sum << "$\n";
+	std::cout << "\n\nИтого (с учётом скидок): " << sum << "$$\n";
 
 	return 0;
 }
